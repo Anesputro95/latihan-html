@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Picture & Source</title>
+</head>
+<!-- <picture> 
+    Elemen HTML yang memungkinkan kita untuk menyediakan beberapa versi ukuran gambar yang berbeda -->
+
+<!-- <source> 
+    Tag yang di gunakan di dalam tag <picture> untuk mendefinisikan berbagai versi ukuran gambar. Setiap <source> menentukan lokasi gambar yang akan di gunakan berdasarkan ukuran layar  -->
+
+        <!-- FUNGSI
+                untuk menampilkan gambar yang responsif, yang artinya gambar tersebut berubah berdasarkan kondisi ukuran layar tertentu -->
+<body>
+    <picture>
+        <source srcset="MULTIMEDIA/Gengar-Small.jpg" media="(max-width:500px)">
+        <source srcset="MULTIMEDIA/Gengar-Medium.jpg" media="(max-width850px)">
+        <img src="MULTIMEDIA/Gengar-Big.jpg" alt="Gengar-Big" style="width: 100%;">
+    </picture>
+</body>
+</html>

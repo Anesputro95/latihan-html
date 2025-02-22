@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleregister.css">
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            <h1>Formulir Pendaftaran</h1>
+        </legend>
+        <form>
+            
+            <div class="Pendaftar">
+                <label for="Name">Nama Pendaftar :</label>
+                <input type="text" name="nama" id="Name" required
+            </div>
+            <br><br>
+            <div class="TTL">
+                <label for="Tempat">Tempat/Tanggal Lahir :</label>
+                <input type="text" id="Tempat" name="tempat"  required>
+                <input type="date" name="" id="Tempat">
+            </div>
+            <br>
+            <div class="region">
+                <label for="Group_agama">Agama :</label>
+                <select name="agama" id="Group_agama" required>
+                    <option value="select">--Select your Region--</option>
+                    <option value="islam">Islam</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="protestan">Protestan</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                </select>
+            </div>
+            <br>
+            <div class="alamat">
+                <label for="address">Alamat :</label>
+                <textarea name="alamat" id="address" placeholder="Tuliskan Alamat Lengkapmu" rows="5" cols="70"></textarea>
+            </div>
+            <br>
+            <div class="telp">
+                <label for="no">No. Telp/Hp :</label>
+                <input type="number" name="Telpon" id="no" required>
+            </div>
+            <br>
+            <div class="Kelamin">
+                Jenis Kelamin :
+                <input type="radio" name="sex" id="sexpria">
+                <label for="sexpria">Laki-laki</label>
+                <input type="radio" name="sex" id="sexperempuan">
+                <label for="sexperempuan">Wanita</label>
+            </div>
+            <br>
+            <div class="foto">
+                <label for="Foto">Pas Foto :</label>
+                <input type="file" name="pasfoto" id="Foto">
+            </div>
+            <br>
+            <button>Submit</button>
+        </form>
+    </fieldset>
+</body>
+</html>

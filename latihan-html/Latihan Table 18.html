@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Membuat Table</title>
+</head>
+<body>
+    <h5>Latihan Tabel 1</h5>
+    
+    <table rules="all" border="1" cellpadding="15" align="center">
+        <Caption><h2>Data Mahasiswa</h2></Caption>
+        <tr>
+            <th style="background-color: red;" rowspan="2">No.</th>
+            <th style="background-color: aqua;" rowspan="2">Name</th>
+            <th style="background-color: red;" colspan="2">Sex</th>
+            <th style="background-color: aqua;" rowspan="2">Address</th>
+            <th style="background-color: red;" rowspan="2">Image</th>
+        </tr>
+        <tr>
+            <th style="background-color: aqua;">Male</th>
+            <th style="background-color: aqua;">Female</th>
+        </tr>
+        <tr style="background-color: green;" align="center">
+            <td>1</td>
+            <td>Udin</td>
+            <td>M</td>
+            <td>-</td>
+            <td>Jl. itulah</td>
+            <td><img src="Gambar/Gengar.jpg" alt="Gengar" width="50px"
+                height="35px"></td>
+        </tr>
+        <tr style="background-color: green;" align="center">
+            <td>2</td>
+            <td>Natasha</td>
+            <td>-</td>
+            <td>F</td>
+            <td>Jl. Kamboja</td>
+            <td><img src="Gambar/Gengar.jpg" alt="Gengar" width="50px"
+                height="35px"></td>
+        </tr>
+        <tr>
+            <th style="background-color: red;" colspan="4">Total Mahasiswa</th>
+            <th style="background-color: aqua;" colspan="2">2</th>
+        </tr>
+    </table>
+
+    
+    <h5>Latihan Tabel 2</h5>
+    
+    <table rules="all" cellpadding="15" align="center">
+        <Caption><h2>Data Mahasiswa</h2></Caption>
+        <tr>
+            <th style="background-color: red;" rowspan="2">No.</th>
+            <th style="background-color: aqua;" rowspan="2">Name</th>
+            <th style="background-color: red;" colspan="2">Sex</th>
+            <th style="background-color: aqua;" rowspan="2">Address</th>
+            <th style="background-color: red;" rowspan="2">Video</th>
+            
+        </tr>
+        <tr style="background-color: aqua;">
+            <th>Male</th>
+            <th>Female</th>
+        </tr>
+        <tr style="background-color: green;" align="center">
+            <td>1</td>
+            <td>Udin</td>
+            <td>M</td>
+            <td>-</td>
+            <td>Jl. itulah</td>
+            <th><video src="MULTIMEDIA/Assignment - PT PRISMA.mp4" controls width="150px" height="180px"></video></th>
+        </tr>
+        <tr style="background-color: green;" align="center">
+            <td>2</td>
+            <td>Natasha</td>
+            <td>-</td>
+            <td>F</td>
+            <td>Jl. Kamboja</td>
+            <th><video src="MULTIMEDIA/Assignment - PT PRISMA.mp4" controls width="150px" height="180px"></video></th>
+        </tr>
+        <tr>
+            
+            <th style="background-color: red;" colspan="5">Total Mahasiswa</th>
+            <th  style="background-color: aqua;">2</th>
+        </tr>
+    </table>
+
+
+    <h5>Latihan Tabel 3</h5>
+    
+    <table rules="rows" cellpadding="15" align="center">
+        <Caption><h2>Data Mahasiswa</h2></Caption>
+        <tr>
+            <th rowspan="2">No.</th>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Sex</th>
+            <th rowspan="2">Address</th>
+            <th rowspan="2">Audio</th>
+        </tr>
+        <tr>
+            <th>Male</th>
+            <th>Female</th>
+        </tr>
+        <tr style="background-color: green;" align="center">
+            <td>1</td>
+            <td>Udin</td>
+            <td>M</td>
+            <td>-</td>
+            <td>Jl. itulah</td>
+            <td style="background-color: red;">
+                <audio src="MULTIMEDIA/Short 3 WAV.wav" controls></audio>
+            </td>
+        </tr>
+        <tr style="background-color: green;" align="center">
+            <td>2</td>
+            <td>Natasha</td>
+            <td>-</td>
+            <td>F</td>
+            <td>Jl. Kamboja</td>
+            <td style="background-color: red;">
+                <audio src="MULTIMEDIA/Short 3 WAV.wav" controls></audio>
+            </td>
+        </tr>
+        <tr>
+            <th style="background-color: red;" colspan="5">Total Mahasiswa</th>
+            <th style="background-color: aqua;">2</th>
+        </tr>
+    </table>
+</body>
+</html>

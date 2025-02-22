@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Membuat Form</title>
+</head>
+<body>
+    <h1>Forms Demo</h1>
+    <!-- file:///C:/rendang?Username=anes&password=123&color=%23ff0000&num=95 -->
+    <form action="/rendang">
+        <div class="Username">
+            <label for="Username">Enter a Username :</label>
+            <input id="Username" type="text" placeholder="Username" name="Username">
+        </div>
+        <br>
+        <div class="password">
+            <label for="password">Enter Your Password :</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </div>
+        <br>
+        <div class="color">
+            <label for="color">Enter a Color :</label>
+            <input type="color" id="color" name="color">
+        </div>
+        <br>
+        <div class="number">
+            <label for="number">Enter a Number :</label>
+            <input type="number" placeholder="enter a number" id="number" name="num">
+        </div>
+        <br>
+        <div>
+            <button>Submit</button>
+            <input type="button" value="click me">
+        </div>
+    </form>
+    <hr>
+    <br>
+    <button>Not Inside Form</button>
+    <h2>Hijacking Searches</h2>
+    
+    <h3>Search Quora</h3>
+    <form action="https://id.quora.com/search" >
+        <input type="text" name="q">
+        <button>Search Quora</button>
+    </form>
+    
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" id="">
+        <button>Searh Google</button>
+    </form>
+    
+    <h3>Search Youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Searh Youtube</button>
+    </form>
+    <hr>
+
+    <h2>Input Radio, Checkbox, and Select Button</h2>
+    <h3>More Inputs</h3>
+    <form action="/Animal">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree</label>
+        <p>
+            <label for="Ragunan">Ragunan</label>
+                <input type="radio" name="Zoo" id="Ragunan" value="Ragunan">
+            <label for="Safari">Taman Safari</label>
+                <input type="radio" name="Zoo" id="Safari" value="Safari">
+            <label for="Bandung">Bandung Zoo</label>
+                <input type="radio" name="Zoo" id="Bandung" value="Bandung_Zoo">
+        </p>
+       
+    <p>
+            <label for="animal">Plaese Choose Your Animal</label>
+            <select name="animal" id="animal">
+                <option value="" selected>-- Please choose an Animal --</option>
+                <option value="Lion">Lion</option>
+                <option value="Tiger">Tiger</option>
+                <option value="Shark">Shark</option>
+                <option value="Bear">Bear</option>
+                <option value="Camel">Camel</option>
+            </select>
+    </p>
+        <hr>
+        <h2>Input Range and Text Area</h2>
+    <p>
+        <label for="Like">how much do you like animals</label>
+            <input type="range" name="Like_level" id="Like" step="10" min="0" max="100">   
+    </p>
+    <p>
+        <label for="why">Why Do you like the animal?</label>
+        <br>
+        <textarea id="why" rows="10" cols="40" name="Why?" placeholder="Why do you like it?"></textarea>
+    </p>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter your Name</label>
+        <input type="text" id="first" name="first" required>
+        
+        <p>
+            <label for="Username">Username</label>
+            <input type="text" name="Username" id="Username" minlength="5" maxlength="20" required>
+        </p>
+        <p>
+            <!-- <input type="email" name="" id="" required> -->
+             <input type="url" name="" id="" required>
+            </p>
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Eat Registrion!!</title>
+</head>
+<body>
+    <h1>Race Eat Registrion!</h1>
+<form action="/Eat">
+    <div>
+        <label for="First">First Name</label>
+        <input type="text" id="First" name="firstname" required>
+        <label for="Last"> Last Name</label>
+        <input type="text" id="Last" name="lastname" required>
+    </div>
+    
+    <div>
+        <br>
+        <p>Select A Eat</p>
+            <p>
+                <input type="radio" name="race_food" id="big" value="bigburger">
+                <label for="big">Big Burger</label>
+            </p>
+            <p>
+                <input type="radio" name="race_food" id="chicken" >
+                <label for="chicken">10 Kentucky Chicken</label>
+            </p>
+            <p>
+                <input type="radio" name="race_food" id="slice" >
+                <label for="slice">5 Slice Pizza</label>
+            </p>
+        
+    </div>
+    <div>
+        <label for="your_email">Email :</label>
+        <input type="email" id="your_email" required>
+        <label for="your_password">Password :</label>
+        <input type="password" id="your_password" required>
+        <p>
+            <label for="group_age">Select Age Group :</label>
+            <select name="age" id="group_age">
+                <option value="under_age" selected>--Under 18--</option>
+                <option value="pass">18-25</option>
+                <option value="middle">25-35</option>
+                <option value="highest">35-45</option>
+            </select>
+        </p>
+    </div>
+    <button>Register!</button>
+</form>
+</body>
+</html>
